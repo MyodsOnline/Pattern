@@ -1,4 +1,4 @@
-from templator import render
+from framework.templator import render
 
 
 class Index:

@@ -1,4 +1,3 @@
-from server_urls import fronts
 
 
 class PageNotFound404:
@@ -23,7 +22,7 @@ class Application:
             view = PageNotFound404()
         request = {}
 
-        for front in fronts:
+        for front in self.fronts:
             front(request)
         print(request)
         code, body = view(request)
