@@ -27,5 +27,5 @@ class Application:
         # print(request['data'])
         code, body = view(request)
 
-        start_response(code, [('Content-Type', 'text/html')])
+        start_response(code, [('Content-type', 'text/html; charset=utf-8')])
         return [body.encode('utf-8')]

@@ -19,11 +19,12 @@ def secret_front(request):
 
 
 def other_front(request):
-    request['key'] = 'Some awesome text'
+    request['key'] = [(f"{key}: {value}\n").encode("utf-8")
+                      for key, value in os.environ.items()]
 
 
 def home_front(request):
-    request['data'] = 'Some awesome text'
+    request['data'] = load_json()
 
 
 fronts = [secret_front, other_front, home_front]

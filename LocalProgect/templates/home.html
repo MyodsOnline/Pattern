@@ -7,12 +7,14 @@
 <body>
     <h1>Home page</h1>
     <p>
-        {%if data%}
-        yes
-        {%else%}
-        no
-        {%endif%}
+        {% for el in date %}
+            <h5>{{ el['object'] }}:</h5>
+                {% for i in el['items'] %}
+                    <p>{{ i['item_title'] }}</p>
+                {% endfor %}<br>
+        {% endfor %}
     </p>
+
     <a href="http://127.0.0.1:8000/">Index</a>
     <a href="http://127.0.0.1:8000/home/">Home</a>
     <a href="http://127.0.0.1:8000/other/">Other</a>
