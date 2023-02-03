@@ -5,7 +5,7 @@ class Request:
         self.path = environ['PATH_INFO']
         self.headers = self._get_headers(environ)
         self.query_params = self._get_query_params(environ)
-        print(environ)
+        # print(environ)
 
 
     def _get_headers(self, environ):

@@ -1,6 +1,7 @@
 from request import Request
 from view import View
 
+
 class Framework:
 
     def __init__(self, urls):
@@ -9,9 +10,9 @@ class Framework:
     def __call__(self, environ, start_response):
         request = Request(environ)
         view = self._get_view(request)
-        print(self._get_response(request, view))
-        start_response('200 OK', [('Content-Type', 'text/html')])
-        return [b'Hello from simple wsgi application']
+        response = self._get_response(request, view)
+        start_response(response.status, list(response.headers.items()))
+        return [response.body.encode()]
 
     def _get_view(self, request: Request):
         path = request.path
