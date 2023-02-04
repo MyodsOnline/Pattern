@@ -6,6 +6,6 @@ from server_urls import routes, fronts
 
 application = Application(routes, fronts)
 
-with make_server('', 8000, application) as localhost:
+with make_server('', 8000, application) as httpd:
     print("Application start")
-    localhost.serve_forever()
+    httpd.serve_forever()
