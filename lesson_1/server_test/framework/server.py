@@ -1,3 +1,4 @@
+from Pattern.lesson_1.server_test.framework.request import Request
 
 
 class PageNotFound404:
@@ -12,6 +13,8 @@ class Application:
 
     def __call__(self, environ, start_response):
         path = environ['PATH_INFO']
+        request = Request(environ)
+        print(f'1 - {request.headers}\n //// METHOD - {request.method}')
 
         if not path.endswith('/'):
             path = f'{path}/'
@@ -24,7 +27,7 @@ class Application:
 
         for front in self.fronts:
             front(request)
-        print(request)
+        print(f'Request - {request}')
         code, body = view(request)
 
         start_response(code, [('Content-Type', 'text/html')])

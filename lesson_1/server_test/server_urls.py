@@ -10,7 +10,11 @@ def other_front(request):
     request['key'] = 'Some awesome text'
 
 
-fronts = [secret_front, other_front]
+def home_front(request):
+    request['home'] = '<h1>Home view</h1>'
+
+
+fronts = [secret_front, other_front, home_front]
 
 routes = {
     '/': Index(),
