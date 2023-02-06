@@ -1,4 +1,4 @@
-from Pattern.lesson_1.server_test.framework.request import Request
+from Pattern.lesson_1.server_test.framework.request import Request, PostRequests
 
 
 class PageNotFound404:
@@ -16,6 +16,21 @@ class Application:
         request = Request(environ)
         print(f'1 - {request.headers}\n //// METHOD - {request.method}')
 
+        if request.method == 'post':
+            data = PostRequests().get_request_params(environ)
+            print(f'POST data - {data}')
+            with open('stdout/post_request.txt', 'w', encoding='utf-8') as post_r:
+                for k, v in data.items():
+                    line = f'{k}: {v}\n'
+                    post_r.write(line)
+        if request.method == 'get':
+            data = Request(environ)._get_query_params(environ)
+            print(f'GET data - {data}')
+            with open('stdout/get_request.txt', 'w', encoding='utf-8') as get_r:
+                for k, v in data.items():
+                    line = f'{k}: {v}\n'
+                    get_r.write(line)
+
         if not path.endswith('/'):
             path = f'{path}/'
 
@@ -27,7 +42,7 @@ class Application:
 
         for front in self.fronts:
             front(request)
-        print(f'Request - {request}')
+        # print(f'Request - {request}')
         code, body = view(request)
 
         start_response(code, [('Content-Type', 'text/html')])
