@@ -13,7 +13,7 @@ def load_json():
 
 
 def secret_front(request):
-    request['secret'] = date.today()
+    request['secret'] = date.today().strftime('%d.%m.%Y')
 
 
 def other_front(request):

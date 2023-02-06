@@ -3,22 +3,29 @@ from framework.templator import render
 
 class Index:
     def __call__(self, request):
-        return '200 OK', render(template_name='index.html', date=request.get('secret', None))
+        return '200 OK', render(template_name='index.html',
+                                title = 'Index page',
+                                date=request.get('secret', None))
 
 
 class Other:
     def __call__(self, request):
-        return '200 OK', render(template_name='other.html', date=request.get('key'))
+        return '200 OK', render(template_name='other.html',
+                                title = 'Other page',
+                                date=request.get('key'))
 
 
 class HomeView:
     def __call__(self, request):
-        return '200 OK', render(template_name='home.html', date=request.get('data'))
+        return '200 OK', render(template_name='home.html',
+                                title = 'Home page',
+                                date = request.get('data'))
 
 
 class ContactView:
     def __call__(self, request):
-        return '200 OK', render(template_name='contacts.html', title='Post page')
+        return '200 OK', render(template_name='contacts.html',
+                                title='Post page')
 
 
 class PageNotFound404:
