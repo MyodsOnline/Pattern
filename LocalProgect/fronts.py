@@ -19,10 +19,12 @@ def secret_front(request):
 def other_front(request):
     request['key'] = [(f"{key}: {value}\n").encode("utf-8")
                       for key, value in os.environ.items()]
+    request['description'] = f"Вывод переменной environ['PATH_INFO'] из базовой логики приложения:"
 
 
 def home_front(request):
     request['data'] = load_json()
+    request['path'] = f'{os.path.basename(JSON_FILE_PATH)}'
 
 
 fronts = [secret_front, other_front, home_front]

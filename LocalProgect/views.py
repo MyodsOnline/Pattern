@@ -12,14 +12,16 @@ class Other:
     def __call__(self, request):
         return '200 OK', render(template_name='other.html',
                                 title = 'Other page',
-                                date=request.get('key'))
+                                date=request.get('key'),
+                                description = request.get('description'))
 
 
 class HomeView:
     def __call__(self, request):
         return '200 OK', render(template_name='home.html',
                                 title = 'Home page',
-                                date = request.get('data'))
+                                date = request.get('data'),
+                                path = request.get('path'))
 
 
 class ContactView:

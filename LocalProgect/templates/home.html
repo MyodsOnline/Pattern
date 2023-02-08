@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block maincontent %}
+    <h2>Данные выгружены из файла: {{ path }}</h2>
     {% for el in date %}
         <p><b>{{ el['object'] }}:</b></p>
         {% for i in el['items'] %}
