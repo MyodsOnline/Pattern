@@ -1,21 +1,88 @@
 ﻿<!DOCTYPE html>
-<html>
-	<head>
-		<title>Школа программирования</title>
-		<style type="text/css">
-			body {
-				font-family: Arial, Verdana, sans-serif;
-				font-size: 90%;
-				color: #666;
-				background-color: #f8f8f8;}
-		</style>
-	</head>
-	<body>
-		<h1>Наши курсы</h1>
-		<p>Все программы действуют в течение года.</p>
-		<p>Расписание на дату: {{date}} <b>(дата подставляется шаблоном)</b></p>
-		<a href="http://127.0.0.1:8000/">Index</a>
-		<a href="http://127.0.0.1:8000/home/">Home</a>
-		<a href="http://127.0.0.1:8000/other/">Other</a>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: beige;
+            width: 100vw;
+            height: calc(100vh - 100px);
+            display: flex;
+            flex-direction: column;
+        }
+        header, footer {
+            display: flex;
+            width: calc(100vw - 100px);
+            height: 100px;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: darkolivegreen;
+            padding: 5px 50px;
+        }
+        h1 {
+            font-family: Arial Rounded MT Bold;
+            font-size: 3em;
+        }
+        menu {
+            display: flex;
+        }
+        menu a {
+            display: flex;
+            padding: 7px 14px;
+            cursor: pointer;
+            text-decoration: none;
+            width: 80px;
+            height: fit-content;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            border-radius: 5px;
+            color: thistle;
+        }
+        menu a:hover {
+            background-color: bisque;
+            color: darkolivegreen;
+        }
+        main {
+            padding: 20px 50px;
+        }
+        footer {
+            color: thistle;
+            flex-direction: column;
+        }
+        footer h3 {
+            margin: 0 auto;
+        }
+        footer a {
+            color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>{{ title }}</h1>
+            <menu>
+                <a href="http://127.0.0.1:8000/">Index</a>
+                <a href="http://127.0.0.1:8000/home/">Home</a>
+                <a href="http://127.0.0.1:8000/other/">Other</a>
+                <a href="http://127.0.0.1:8000/contact/">Contacts</a>
+            </menu>
+        </header>
+        <main>
+			<p>Today is: {{date}} <b>(дата подставляется шаблоном)</b></p>
+		</main>
+    </div>
+    <footer>
+        <h3>Python Architecture and Design Patterns Learning Project</h3>
+        <a href="https://github.com/MyodsOnline/Pattern" target="_blank">Link to github.com</a>
+    </footer>
+</body>
 </html>

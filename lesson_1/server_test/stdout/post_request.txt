@@ -1,0 +1,4 @@
+your_name: MyName
+your_email: my@email.address
+your_enquiry: test message
+contact_submitted: submit
