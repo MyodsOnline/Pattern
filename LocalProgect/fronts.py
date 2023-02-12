@@ -1,9 +1,17 @@
 from datetime import date
 import json
 import os
+from logger.logger_config import Logger
 
 
 JSON_FILE_PATH = os.path.join('fixtures', 'data.json')
+logger = Logger('server')
+
+
+def logger_front(request, environ=None):
+    if environ:
+        logger.log(f'{environ["REMOTE_ADDR"]} {environ["REQUEST_METHOD"]} {environ["PATH_INFO"]}')
+    return
 
 
 def load_json():
@@ -27,4 +35,4 @@ def home_front(request):
     request['path'] = f'{os.path.basename(JSON_FILE_PATH)}'
 
 
-fronts = [secret_front, other_front, home_front]
+fronts = [secret_front, other_front, home_front, logger_front]
