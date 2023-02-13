@@ -7,7 +7,7 @@ logger = Logger('views')
 
 class Index:
     def __call__(self, request):
-        logger.log('Load Index page')
+        logger.log(f'Load Index page with {request["method"]}')
         return '200 OK', render(template_name='index.html',
                                 title = 'Index page',
                                 date=request.get('secret', None))
@@ -15,7 +15,7 @@ class Index:
 
 class Other:
     def __call__(self, request):
-        logger.log('Load Other page')
+        logger.log(f'Load Other page with {request["method"]}')
         return '200 OK', render(template_name='other.html',
                                 title = 'Other page',
                                 date=request.get('key'),

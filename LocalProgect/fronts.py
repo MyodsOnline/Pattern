@@ -1,17 +1,12 @@
 from datetime import date
 import json
 import os
+
 from logger.logger_config import Logger
 
 
+logger = Logger('fronts')
 JSON_FILE_PATH = os.path.join('fixtures', 'data.json')
-logger = Logger('server')
-
-
-def logger_front(request, environ=None):
-    if environ:
-        logger.log(f'{environ["REMOTE_ADDR"]} {environ["REQUEST_METHOD"]} {environ["PATH_INFO"]}')
-    return
 
 
 def load_json():
@@ -21,6 +16,7 @@ def load_json():
 
 
 def secret_front(request):
+    logger.log(f'Started secret_front with {request}')
     request['secret'] = date.today().strftime('%d.%m.%Y')
 
 
@@ -35,4 +31,4 @@ def home_front(request):
     request['path'] = f'{os.path.basename(JSON_FILE_PATH)}'
 
 
-fronts = [secret_front, other_front, home_front, logger_front]
+fronts = [secret_front, other_front, home_front]
