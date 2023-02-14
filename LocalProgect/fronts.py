@@ -2,7 +2,10 @@ from datetime import date
 import json
 import os
 
+from logger.logger_config import Logger
 
+
+logger = Logger('fronts')
 JSON_FILE_PATH = os.path.join('fixtures', 'data.json')
 
 
@@ -13,6 +16,7 @@ def load_json():
 
 
 def secret_front(request):
+    logger.log(f'Started secret_front with {request}')
     request['secret'] = date.today().strftime('%d.%m.%Y')
 
 

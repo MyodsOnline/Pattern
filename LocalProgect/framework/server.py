@@ -1,4 +1,4 @@
-from LocalProgect.framework.query_requests import PostRequests, GetRequest
+from Pattern.LocalProgect.framework.query_requests import PostRequests, GetRequest
 
 
 class Application:
