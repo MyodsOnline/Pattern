@@ -38,3 +38,21 @@ class CourseFactory:
     @classmethod
     def create_course(cls, type_, name, category):
         return cls.course_types[type_](name, category)
+
+
+class Category:
+    auto_id = 0
+
+    def __init__(self, name, category):
+        self.id = Category.auto_id
+        Category.auto_id += 1
+        self.name = name
+        self.category = category
+        self.courses = []
+
+    def course_count(self):
+        result = len(self.courses)
+        if self.category:
+            result += self.category.course_count()
+        return result
+

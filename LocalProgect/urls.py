@@ -1,4 +1,4 @@
-from views import Other, HomeView, Index, ContactView, PageNotFound404
+from views import *
 
 
 routes = {
@@ -11,7 +11,7 @@ routes = {
     '/study_programs/': 'StudyPrograms()',
     '/courses-list/': 'CoursesList()',
     '/create-course/': 'CreateCourse()',
-    '/create-category/': 'CreateCategory()',
-    '/category-list/': 'CategoryList()',
+    '/create-category/': CreateCategory(),
+    '/category-list/': CategoryList(),
     '/copy-course/': 'CopyCourse()',
 }

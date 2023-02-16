@@ -1,4 +1,2 @@
-name: New design MyName
-email: nemdisign@my.email
-text: New design Test text
-contact_submitted: submit
+category_name: 
+create_category: Submit

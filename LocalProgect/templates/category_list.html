@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block special_css %}
+    <style>
+        .like_a_button {
+            font-family: -webkit-small-control;
+            margin: 30px auto;
+            display: flex;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+            font-size: 1.3em;
+            cursor: pointer;
+            background: lightgray;
+            border-radius: 5px;
+            width: fit-content;
+        }
+    </style>
+{% endblock %}
+
+{% block maincontent %}
+
+    {% if categories_list %}
+        <h1>Categories list</h1>
+        <ul>
+            {% for item in categories_list %}
+                <li>
+                    {{item.name}} <span>Количество курсов: {{item.course_count()}}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h1>Categories are not created yet</h1>
+    {% endif %}
+    <a href="/create-category/" class="like_a_button">Create a new category</a>
+{% endblock %}
