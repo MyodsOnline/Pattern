@@ -1,8 +1,10 @@
 from framework.templator import render
 from logger.logger_config import Logger
+from engine import Engine
 
 
 logger = Logger('views')
+site = Engine()
 
 
 class Index:
