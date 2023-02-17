@@ -1,31 +1,20 @@
 {% extends "base.html" %}
 
-{% block special_css %}
-    <style>
-        .like_a_button {
-            font-family: -webkit-small-control;
-            margin: 30px auto;
-            display: flex;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: black;
-            font-size: 1.3em;
-            cursor: pointer;
-            background: lightgray;
-            border-radius: 5px;
-            width: fit-content;
-        }
-    </style>
-{% endblock %}
-
 {% block maincontent %}
 
     {% if categories_list %}
         <h1>Categories list</h1>
         <ul>
-            {% for item in categories_list %}
+            {% for category in categories_list %}
                 <li>
-                    {{item.name}} <span>Количество курсов: {{item.course_count()}}</span>
+                    <p>{{category.name}}.</p>
+                    <span class="tips greenColor">
+                        {% if category.course_count() != 0 %}
+                            <a href="/courses-list/?id={{category.id}}">Available courses: {{category.course_count()}}</a>
+                        {% else %}
+                            <a href="/create-course/?id={{category.id}}">Create a new course</a>
+                        {% endif %}
+                    </span>
                 </li>
             {% endfor %}
         </ul>

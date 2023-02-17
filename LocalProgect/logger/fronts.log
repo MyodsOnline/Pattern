@@ -263,3 +263,538 @@
 2023-02-17 02:22:45.632951  Started secret_front with {'method': 'get'}
 2023-02-17 02:22:47.110569  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': '', 'create_category': 'Submit'}}
 2023-02-17 02:23:07.080238  Started secret_front with {'method': 'get'}
+2023-02-17 02:30:42.108163  Started secret_front with {'method': 'get'}
+2023-02-17 02:30:44.236268  Started secret_front with {'method': 'get'}
+2023-02-17 02:30:47.257823  Started secret_front with {'method': 'get'}
+2023-02-17 02:30:48.520422  Started secret_front with {'method': 'get'}
+2023-02-17 02:30:49.908850  Started secret_front with {'method': 'get'}
+2023-02-17 02:30:51.258838  Started secret_front with {'method': 'get'}
+2023-02-17 02:30:52.407311  Started secret_front with {'method': 'get'}
+2023-02-17 02:30:54.522590  Started secret_front with {'method': 'get'}
+2023-02-17 02:44:56.181625  Started secret_front with {'method': 'get'}
+2023-02-17 02:44:57.551524  Started secret_front with {'method': 'get'}
+2023-02-17 02:45:05.371273  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'first', 'create_category': 'Submit'}}
+2023-02-17 02:51:22.274043  Started secret_front with {'method': 'get'}
+2023-02-17 02:51:40.990497  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'second find ID', 'create_category': 'Submit'}}
+2023-02-17 02:58:41.376210  Started secret_front with {'method': 'get'}
+2023-02-17 02:58:42.264166  Started secret_front with {'method': 'get'}
+2023-02-17 02:58:44.230319  Started secret_front with {'method': 'get'}
+2023-02-17 02:58:50.816103  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'find id', 'create_category': 'Submit'}}
+2023-02-17 03:05:15.557807  Started secret_front with {'method': 'get'}
+2023-02-17 03:05:18.109309  Started secret_front with {'method': 'get'}
+2023-02-17 03:50:05.867941  Started secret_front with {'method': 'get'}
+2023-02-17 03:50:07.952654  Started secret_front with {'method': 'get'}
+2023-02-17 03:50:09.347516  Started secret_front with {'method': 'get'}
+2023-02-17 03:50:14.731995  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'id', 'create_category': 'Submit'}}
+2023-02-17 03:58:36.238016  Started secret_front with {'method': 'get'}
+2023-02-17 03:58:37.103712  Started secret_front with {'method': 'get'}
+2023-02-17 03:58:39.513632  Started secret_front with {'method': 'get'}
+2023-02-17 03:58:43.206532  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'id', 'create_category': 'Submit'}}
+2023-02-17 03:58:59.559123  Started secret_front with {'method': 'get'}
+2023-02-17 03:59:05.830100  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'id2', 'create_category': 'Submit'}}
+2023-02-17 04:00:13.635661  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 04:02:22.479780  Started secret_front with {'method': 'get'}
+2023-02-17 04:02:23.319245  Started secret_front with {'method': 'get'}
+2023-02-17 04:02:24.919524  Started secret_front with {'method': 'get'}
+2023-02-17 04:02:55.156292  Started secret_front with {'method': 'get'}
+2023-02-17 04:02:56.552280  Started secret_front with {'method': 'get'}
+2023-02-17 04:02:57.522614  Started secret_front with {'method': 'get'}
+2023-02-17 04:02:58.859285  Started secret_front with {'method': 'get'}
+2023-02-17 04:03:00.230118  Started secret_front with {'method': 'get'}
+2023-02-17 04:03:02.890706  Started secret_front with {'method': 'get'}
+2023-02-17 04:03:06.510376  Started secret_front with {'method': 'get'}
+2023-02-17 04:03:08.700633  Started secret_front with {'method': 'get'}
+2023-02-17 04:03:09.761634  Started secret_front with {'method': 'get'}
+2023-02-17 04:03:10.401025  Started secret_front with {'method': 'get'}
+2023-02-17 04:09:15.680982  Started secret_front with {'method': 'get'}
+2023-02-17 04:09:16.497472  Started secret_front with {'method': 'get'}
+2023-02-17 04:09:17.499155  Started secret_front with {'method': 'get'}
+2023-02-17 04:09:22.441294  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': '12', 'create_category': 'Submit'}}
+2023-02-17 04:09:27.317610  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 04:15:42.822236  Started secret_front with {'method': 'get'}
+2023-02-17 04:15:43.938204  Started secret_front with {'method': 'get'}
+2023-02-17 04:15:45.058727  Started secret_front with {'method': 'get'}
+2023-02-17 04:15:48.464580  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': '123', 'create_category': 'Submit'}}
+2023-02-17 04:17:00.430310  Started secret_front with {'method': 'get'}
+2023-02-17 04:17:01.832482  Started secret_front with {'method': 'get'}
+2023-02-17 04:17:03.185784  Started secret_front with {'method': 'get'}
+2023-02-17 04:17:07.425949  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Werner', 'create_category': 'Submit'}}
+2023-02-17 15:19:08.200035  Started secret_front with {'method': 'get'}
+2023-02-17 15:19:09.366738  Started secret_front with {'method': 'get'}
+2023-02-17 15:19:10.584556  Started secret_front with {'method': 'get'}
+2023-02-17 15:19:11.565320  Started secret_front with {'method': 'get'}
+2023-02-17 15:19:13.712472  Started secret_front with {'method': 'get'}
+2023-02-17 15:19:22.986579  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'title', 'create_category': 'Submit'}}
+2023-02-17 15:19:29.828599  Started secret_front with {'method': 'get'}
+2023-02-17 15:56:58.865887  Started secret_front with {'method': 'get'}
+2023-02-17 15:57:02.563953  Started secret_front with {'method': 'get'}
+2023-02-17 15:57:03.849710  Started secret_front with {'method': 'get'}
+2023-02-17 15:57:08.230870  Started secret_front with {'method': 'get'}
+2023-02-17 15:57:15.678784  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Creational', 'create_category': 'Submit'}}
+2023-02-17 15:57:19.681322  Started secret_front with {'method': 'get'}
+2023-02-17 15:58:55.323722  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Creational', 'create_category': 'Submit'}}
+2023-02-17 15:58:57.526485  Started secret_front with {'method': 'get'}
+2023-02-17 15:58:58.492830  Started secret_front with {'method': 'get'}
+2023-02-17 15:59:05.443808  Started secret_front with {'method': 'get'}
+2023-02-17 16:00:25.654613  Started secret_front with {'method': 'get'}
+2023-02-17 16:04:02.986443  Started secret_front with {'method': 'get'}
+2023-02-17 16:04:05.249706  Started secret_front with {'method': 'get'}
+2023-02-17 16:04:06.817316  Started secret_front with {'method': 'get'}
+2023-02-17 16:04:13.388661  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'val', 'create_category': 'Submit'}}
+2023-02-17 16:04:33.699590  Started secret_front with {'method': 'get'}
+2023-02-17 16:05:32.629155  Started secret_front with {'method': 'get'}
+2023-02-17 16:07:19.685536  Started secret_front with {'method': 'get'}
+2023-02-17 16:07:20.128586  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:07:21.042192  Started secret_front with {'method': 'get'}
+2023-02-17 16:08:02.658252  Started secret_front with {'method': 'get'}
+2023-02-17 16:08:04.443913  Started secret_front with {'method': 'get'}
+2023-02-17 16:10:01.774586  Started secret_front with {'method': 'get'}
+2023-02-17 16:10:01.792858  Started secret_front with {'method': 'get'}
+2023-02-17 16:10:02.854943  Started secret_front with {'method': 'get'}
+2023-02-17 16:10:04.223260  Started secret_front with {'method': 'get'}
+2023-02-17 16:10:05.039552  Started secret_front with {'method': 'get'}
+2023-02-17 16:10:05.740620  Started secret_front with {'method': 'get'}
+2023-02-17 16:10:07.105503  Started secret_front with {'method': 'get'}
+2023-02-17 16:10:10.980885  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'task', 'create_category': 'Submit'}}
+2023-02-17 16:11:40.954686  Started secret_front with {'method': 'get'}
+2023-02-17 16:11:40.972851  Started secret_front with {'method': 'get'}
+2023-02-17 16:11:42.103024  Started secret_front with {'method': 'get'}
+2023-02-17 16:11:43.269514  Started secret_front with {'method': 'get'}
+2023-02-17 16:11:44.319044  Started secret_front with {'method': 'get'}
+2023-02-17 16:11:45.935262  Started secret_front with {'method': 'get'}
+2023-02-17 16:11:56.374621  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'seek id', 'create_category': 'Submit'}}
+2023-02-17 16:12:02.150121  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:13:25.580570  Started secret_front with {'method': 'get'}
+2023-02-17 16:13:28.213440  Started secret_front with {'method': 'get'}
+2023-02-17 16:13:29.831192  Started secret_front with {'method': 'get'}
+2023-02-17 16:13:32.420716  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': '1', 'create_category': 'Submit'}}
+2023-02-17 16:13:34.847291  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:14:44.611164  Started secret_front with {'method': 'get'}
+2023-02-17 16:14:46.761579  Started secret_front with {'method': 'get'}
+2023-02-17 16:14:47.827191  Started secret_front with {'method': 'get'}
+2023-02-17 16:14:50.268639  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': '1', 'create_category': 'Submit'}}
+2023-02-17 16:14:52.366389  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:16:38.067229  Started secret_front with {'method': 'get'}
+2023-02-17 16:16:39.857842  Started secret_front with {'method': 'get'}
+2023-02-17 16:16:41.223766  Started secret_front with {'method': 'get'}
+2023-02-17 16:16:43.186501  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': '1', 'create_category': 'Submit'}}
+2023-02-17 16:17:28.138439  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:18:02.949723  Started secret_front with {'method': 'get'}
+2023-02-17 16:18:04.854264  Started secret_front with {'method': 'get'}
+2023-02-17 16:18:06.088085  Started secret_front with {'method': 'get'}
+2023-02-17 16:18:08.266446  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': '1', 'create_category': 'Submit'}}
+2023-02-17 16:18:12.637708  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:20:52.715505  Started secret_front with {'method': 'get'}
+2023-02-17 16:20:55.282486  Started secret_front with {'method': 'get'}
+2023-02-17 16:20:56.748538  Started secret_front with {'method': 'get'}
+2023-02-17 16:21:07.056512  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'WHAAAAT', 'create_category': 'Submit'}}
+2023-02-17 16:21:13.198707  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:21:26.869583  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'whaaat', 'create_course': 'Submit'}}
+2023-02-17 16:24:57.712557  Started secret_front with {'method': 'get'}
+2023-02-17 16:24:59.427407  Started secret_front with {'method': 'get'}
+2023-02-17 16:25:00.712874  Started secret_front with {'method': 'get'}
+2023-02-17 16:25:02.792723  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': '1', 'create_category': 'Submit'}}
+2023-02-17 16:25:05.296391  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:25:11.718459  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': '1', 'create_course': 'Submit'}}
+2023-02-17 16:30:23.519071  Started secret_front with {'method': 'get'}
+2023-02-17 16:30:26.039755  Started secret_front with {'method': 'get'}
+2023-02-17 16:30:27.140244  Started secret_front with {'method': 'get'}
+2023-02-17 16:30:29.369180  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': '1', 'create_category': 'Submit'}}
+2023-02-17 16:30:33.523960  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:30:42.829261  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': '11', 'create_course': 'Submit'}}
+2023-02-17 16:39:12.542242  Started secret_front with {'method': 'get'}
+2023-02-17 16:39:12.674973  Started secret_front with {'method': 'get'}
+2023-02-17 16:39:14.815914  Started secret_front with {'method': 'get'}
+2023-02-17 16:39:15.914970  Started secret_front with {'method': 'get'}
+2023-02-17 16:39:18.777300  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': '1', 'create_category': 'Submit'}}
+2023-02-17 16:39:20.698055  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:39:23.027106  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': '11', 'create_course': 'Submit'}}
+2023-02-17 16:41:23.389178  Started secret_front with {'method': 'get'}
+2023-02-17 16:41:26.013343  Started secret_front with {'method': 'get'}
+2023-02-17 16:41:27.162656  Started secret_front with {'method': 'get'}
+2023-02-17 16:41:30.128054  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'qw', 'create_category': 'Submit'}}
+2023-02-17 16:41:32.235016  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:41:36.886202  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'ew', 'create_course': 'Submit'}}
+2023-02-17 16:49:23.641301  Started secret_front with {'method': 'get'}
+2023-02-17 16:49:25.576460  Started secret_front with {'method': 'get'}
+2023-02-17 16:49:26.778554  Started secret_front with {'method': 'get'}
+2023-02-17 16:49:43.181628  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': ';(', 'create_category': 'Submit'}}
+2023-02-17 16:49:47.092647  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:49:55.565325  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'qw', 'create_course': 'Submit'}}
+2023-02-17 16:52:26.832415  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:52:33.856688  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 16:52:37.524048  Started secret_front with {'method': 'get'}
+2023-02-17 16:52:43.628561  Started secret_front with {'method': 'get'}
+2023-02-17 16:52:53.676943  Started secret_front with {'method': 'get'}
+2023-02-17 16:52:55.076879  Started secret_front with {'method': 'get'}
+2023-02-17 16:53:00.545163  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:06:57.036713  Started secret_front with {'method': 'get'}
+2023-02-17 17:07:13.566015  Started secret_front with {'method': 'get'}
+2023-02-17 17:07:15.400887  Started secret_front with {'method': 'get'}
+2023-02-17 17:07:17.234073  Started secret_front with {'method': 'get'}
+2023-02-17 17:07:22.922613  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'first', 'create_category': 'Submit'}}
+2023-02-17 17:07:27.116645  Started secret_front with {'method': 'get'}
+2023-02-17 17:07:35.139242  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'second', 'create_category': 'Submit'}}
+2023-02-17 17:14:53.346716  Started secret_front with {'method': 'get'}
+2023-02-17 17:14:55.290725  Started secret_front with {'method': 'get'}
+2023-02-17 17:14:56.739277  Started secret_front with {'method': 'get'}
+2023-02-17 17:15:00.263102  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'sdlfhsd', 'create_category': 'Submit'}}
+2023-02-17 17:15:04.392163  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:16:23.587949  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'dddd', 'create_course': 'Submit'}}
+2023-02-17 17:17:29.960837  Started secret_front with {'method': 'get'}
+2023-02-17 17:17:31.592179  Started secret_front with {'method': 'get'}
+2023-02-17 17:17:32.943455  Started secret_front with {'method': 'get'}
+2023-02-17 17:17:34.955454  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'pdf', 'create_category': 'Submit'}}
+2023-02-17 17:17:36.826697  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:17:38.955626  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'sdfsdf', 'create_course': 'Submit'}}
+2023-02-17 17:20:34.262311  Started secret_front with {'method': 'get'}
+2023-02-17 17:20:35.578434  Started secret_front with {'method': 'get'}
+2023-02-17 17:20:39.501388  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'lksdfj', 'create_category': 'Submit'}}
+2023-02-17 17:20:41.079150  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:20:45.601872  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'pdf;m12', 'create_course': 'Submit'}}
+2023-02-17 17:22:25.363087  Started secret_front with {'method': 'get'}
+2023-02-17 17:22:26.479239  Started secret_front with {'method': 'get'}
+2023-02-17 17:22:31.220149  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'categ', 'create_category': 'Submit'}}
+2023-02-17 17:22:32.531321  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:22:44.920164  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'cou', 'create_course': 'Submit'}}
+2023-02-17 17:24:01.132771  Started secret_front with {'method': 'get'}
+2023-02-17 17:24:08.116253  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:25:37.792255  Started secret_front with {'method': 'get'}
+2023-02-17 17:25:39.416184  Started secret_front with {'method': 'get'}
+2023-02-17 17:25:40.665808  Started secret_front with {'method': 'get'}
+2023-02-17 17:25:43.706667  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'dfgh', 'create_category': 'Submit'}}
+2023-02-17 17:25:47.133115  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:25:50.656747  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'dsf1', 'create_course': 'Submit'}}
+2023-02-17 17:27:36.724065  Started secret_front with {'method': 'get'}
+2023-02-17 17:27:38.501075  Started secret_front with {'method': 'get'}
+2023-02-17 17:27:39.635810  Started secret_front with {'method': 'get'}
+2023-02-17 17:27:43.774796  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'bird', 'create_category': 'Submit'}}
+2023-02-17 17:27:45.552307  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:27:57.274459  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'pagan', 'create_course': 'Submit'}}
+2023-02-17 17:28:10.855763  Started secret_front with {'method': 'get'}
+2023-02-17 17:28:10.980207  Started secret_front with {'method': 'get'}
+2023-02-17 17:28:12.346382  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:28:15.195304  Started secret_front with {'method': 'get'}
+2023-02-17 17:28:19.269518  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:28:20.241691  Started secret_front with {'method': 'get'}
+2023-02-17 17:28:20.393945  Started secret_front with {'method': 'get'}
+2023-02-17 17:28:20.568208  Started secret_front with {'method': 'get'}
+2023-02-17 17:28:21.432254  Started secret_front with {'method': 'get'}
+2023-02-17 17:28:21.588477  Started secret_front with {'method': 'get'}
+2023-02-17 17:28:22.809622  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:31:42.441306  Started secret_front with {'method': 'get'}
+2023-02-17 17:31:42.458353  Started secret_front with {'method': 'get'}
+2023-02-17 17:31:44.389814  Started secret_front with {'method': 'get'}
+2023-02-17 17:31:45.405841  Started secret_front with {'method': 'get'}
+2023-02-17 17:31:49.345243  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'sgjh', 'create_category': 'Submit'}}
+2023-02-17 17:31:50.672458  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:31:53.054650  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'jghj', 'create_course': 'Submit'}}
+2023-02-17 17:32:19.894475  Started secret_front with {'method': 'get'}
+2023-02-17 17:32:20.179910  Started secret_front with {'method': 'get'}
+2023-02-17 17:32:20.586682  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:33:59.639995  Started secret_front with {'method': 'get'}
+2023-02-17 17:34:01.173728  Started secret_front with {'method': 'get'}
+2023-02-17 17:34:03.304890  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'lek', 'create_category': 'Submit'}}
+2023-02-17 17:34:05.657782  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:34:11.397511  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': '67j', 'create_course': 'Submit'}}
+2023-02-17 17:34:26.824392  Started secret_front with {'method': 'get'}
+2023-02-17 17:34:29.341376  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:34:59.549857  Started secret_front with {'method': 'get', 'request_get_data': {'id': ''}}
+2023-02-17 17:35:18.547196  Started secret_front with {'method': 'get'}
+2023-02-17 17:35:24.229836  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:36:12.407114  Started secret_front with {'method': 'get'}
+2023-02-17 17:36:13.591661  Started secret_front with {'method': 'get'}
+2023-02-17 17:36:18.732182  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'holi', 'create_category': 'Submit'}}
+2023-02-17 17:36:20.192881  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:36:23.854730  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'khaki', 'create_course': 'Submit'}}
+2023-02-17 17:36:33.385544  Started secret_front with {'method': 'get'}
+2023-02-17 17:36:33.523639  Started secret_front with {'method': 'get'}
+2023-02-17 17:36:34.840103  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:37:42.508484  Started secret_front with {'method': 'get'}
+2023-02-17 17:37:43.691963  Started secret_front with {'method': 'get'}
+2023-02-17 17:37:46.847998  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'bbt', 'create_category': 'Submit'}}
+2023-02-17 17:37:48.842038  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:37:51.371275  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'fgbt', 'create_course': 'Submit'}}
+2023-02-17 17:38:07.310596  Started secret_front with {'method': 'get'}
+2023-02-17 17:38:07.546528  Started secret_front with {'method': 'get'}
+2023-02-17 17:38:07.836204  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:41:59.862802  Started secret_front with {'method': 'get'}
+2023-02-17 17:42:01.724261  Started secret_front with {'method': 'get'}
+2023-02-17 17:42:03.107279  Started secret_front with {'method': 'get'}
+2023-02-17 17:42:05.386288  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': '56', 'create_category': 'Submit'}}
+2023-02-17 17:42:06.991608  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:42:09.087517  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': '65', 'create_course': 'Submit'}}
+2023-02-17 17:42:15.693537  Started secret_front with {'method': 'get'}
+2023-02-17 17:42:17.613491  Started secret_front with {'method': 'get'}
+2023-02-17 17:42:17.854236  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:44:27.507033  Started secret_front with {'method': 'get'}
+2023-02-17 17:44:29.174687  Started secret_front with {'method': 'get'}
+2023-02-17 17:44:33.490537  Started secret_front with {'method': 'get'}
+2023-02-17 17:44:39.445651  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'first', 'create_category': 'Submit'}}
+2023-02-17 17:44:43.039465  Started secret_front with {'method': 'get'}
+2023-02-17 17:44:50.221797  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'second', 'create_category': 'Submit'}}
+2023-02-17 17:44:55.656731  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 17:44:59.741657  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'wer', 'create_course': 'Submit'}}
+2023-02-17 17:45:07.377106  Started secret_front with {'method': 'get'}
+2023-02-17 17:45:08.219179  Started secret_front with {'method': 'get'}
+2023-02-17 17:45:09.064184  Started secret_front with {'method': 'get'}
+2023-02-17 17:45:10.662181  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:45:12.636867  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 17:47:24.476333  Started secret_front with {'method': 'get'}
+2023-02-17 17:47:24.549838  Started secret_front with {'method': 'get'}
+2023-02-17 17:47:27.923140  Started secret_front with {'method': 'get'}
+2023-02-17 17:47:30.919451  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'pdf', 'create_category': 'Submit'}}
+2023-02-17 17:47:32.375646  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:47:36.762228  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'reg', 'create_course': 'Submit'}}
+2023-02-17 17:47:43.848315  Started secret_front with {'method': 'get'}
+2023-02-17 17:47:44.025803  Started secret_front with {'method': 'get'}
+2023-02-17 17:47:45.384286  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:48:55.289846  Started secret_front with {'method': 'get'}
+2023-02-17 17:48:57.573236  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:49:59.421825  Started secret_front with {'method': 'get'}
+2023-02-17 17:50:01.089231  Started secret_front with {'method': 'get'}
+2023-02-17 17:50:04.096724  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'kjhg', 'create_category': 'Submit'}}
+2023-02-17 17:50:05.809200  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:50:10.891999  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'fuck', 'create_course': 'Submit'}}
+2023-02-17 17:50:19.589184  Started secret_front with {'method': 'get'}
+2023-02-17 17:50:20.846186  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:50:22.589122  Started secret_front with {'method': 'get'}
+2023-02-17 17:50:23.754961  Started secret_front with {'method': 'get'}
+2023-02-17 17:50:28.379237  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'ski', 'create_category': 'Submit'}}
+2023-02-17 17:50:33.273318  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 17:50:37.427825  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'fgtr', 'create_course': 'Submit'}}
+2023-02-17 17:50:41.622514  Started secret_front with {'method': 'get'}
+2023-02-17 17:50:42.940476  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:50:46.538319  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 17:51:44.654769  Started secret_front with {'method': 'get'}
+2023-02-17 17:51:45.656561  Started secret_front with {'method': 'get'}
+2023-02-17 17:51:52.562619  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'first', 'create_category': 'Submit'}}
+2023-02-17 17:51:53.538585  Started secret_front with {'method': 'get'}
+2023-02-17 17:51:57.911329  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'second', 'create_category': 'Submit'}}
+2023-02-17 17:51:59.206726  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:52:03.877449  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': '111', 'create_course': 'Submit'}}
+2023-02-17 17:52:07.824341  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:52:11.135017  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': '112', 'create_course': 'Submit'}}
+2023-02-17 17:52:15.038665  Started secret_front with {'method': 'get'}
+2023-02-17 17:52:16.621963  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 17:52:19.001787  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': '222', 'create_course': 'Submit'}}
+2023-02-17 17:52:20.705719  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 17:52:23.085073  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': '223', 'create_course': 'Submit'}}
+2023-02-17 17:52:24.655245  Started secret_front with {'method': 'get'}
+2023-02-17 17:52:43.722088  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:52:46.422262  Started secret_front with {'method': 'get'}
+2023-02-17 17:52:47.606256  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 17:52:49.973102  Started secret_front with {'method': 'get'}
+2023-02-17 17:52:51.022507  Started secret_front with {'method': 'get'}
+2023-02-17 17:52:51.805886  Started secret_front with {'method': 'get'}
+2023-02-17 17:52:52.488222  Started secret_front with {'method': 'get'}
+2023-02-17 17:52:53.489914  Started secret_front with {'method': 'get'}
+2023-02-17 17:52:54.304926  Started secret_front with {'method': 'get'}
+2023-02-17 17:52:56.355859  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:58:06.455309  Started secret_front with {'method': 'get'}
+2023-02-17 17:58:08.206053  Started secret_front with {'method': 'get'}
+2023-02-17 17:58:12.529939  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'first', 'create_category': 'Submit'}}
+2023-02-17 17:58:14.504035  Started secret_front with {'method': 'get'}
+2023-02-17 17:58:19.625487  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'second', 'create_category': 'Submit'}}
+2023-02-17 17:58:21.939503  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:58:28.993778  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'python', 'create_course': 'Submit'}}
+2023-02-17 17:59:51.337770  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 17:59:59.877596  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'from here', 'create_course': 'Submit'}}
+2023-02-17 18:00:19.456234  Started secret_front with {'method': 'get'}
+2023-02-17 18:00:26.372206  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 18:00:36.909561  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'second type', 'create_course': 'Submit'}}
+2023-02-17 18:00:39.189739  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 18:00:47.527787  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'third type', 'create_course': 'Submit'}}
+2023-02-17 18:00:49.288402  Started secret_front with {'method': 'get'}
+2023-02-17 18:00:51.637503  Started secret_front with {'method': 'get'}
+2023-02-17 18:00:56.388851  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:00:57.805290  Started secret_front with {'method': 'get'}
+2023-02-17 18:00:58.854314  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 18:01:07.188195  Started secret_front with {'method': 'get'}
+2023-02-17 18:04:51.704047  Started secret_front with {'method': 'get'}
+2023-02-17 18:04:53.019848  Started secret_front with {'method': 'get'}
+2023-02-17 18:04:57.516491  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'first', 'create_category': 'Submit'}}
+2023-02-17 18:04:59.088667  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:05:05.660620  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'try', 'create_course': 'Submit'}}
+2023-02-17 18:11:37.376620  Started secret_front with {'method': 'get'}
+2023-02-17 18:11:38.492016  Started secret_front with {'method': 'get'}
+2023-02-17 18:11:41.171660  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'dgfdgdffg', 'create_category': 'Submit'}}
+2023-02-17 18:11:43.526566  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:11:48.881604  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'sdfrrf', 'create_course': 'Submit'}}
+2023-02-17 18:25:49.827439  Started secret_front with {'method': 'get'}
+2023-02-17 18:25:51.757812  Started secret_front with {'method': 'get'}
+2023-02-17 18:26:02.362496  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'category', 'create_category': 'Submit'}}
+2023-02-17 18:26:13.307947  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:26:49.610871  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'course', 'create_course': 'Submit'}}
+2023-02-17 18:26:54.338459  Started secret_front with {'method': 'get'}
+2023-02-17 18:29:31.017787  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:29:39.466727  Started secret_front with {'method': 'get', 'request_get_data': {'id': ''}}
+2023-02-17 18:30:25.414841  Started secret_front with {'method': 'get'}
+2023-02-17 18:30:26.815630  Started secret_front with {'method': 'get'}
+2023-02-17 18:30:27.999098  Started secret_front with {'method': 'get'}
+2023-02-17 18:30:34.789401  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Cooks', 'create_category': 'Submit'}}
+2023-02-17 18:30:39.266425  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:30:46.748887  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'borsch', 'create_course': 'Submit'}}
+2023-02-17 18:30:51.265284  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:30:57.305762  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'lime', 'create_course': 'Submit'}}
+2023-02-17 18:30:59.297491  Started secret_front with {'method': 'get'}
+2023-02-17 18:31:27.848229  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:31:30.531852  Started secret_front with {'method': 'get'}
+2023-02-17 18:39:56.052484  Started secret_front with {'method': 'get'}
+2023-02-17 18:40:03.083867  Started secret_front with {'method': 'get'}
+2023-02-17 18:40:11.223363  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Artemii', 'create_category': 'Submit'}}
+2023-02-17 18:40:18.968514  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:40:31.407200  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'School boy', 'create_course': 'Submit'}}
+2023-02-17 18:40:35.234194  Started secret_front with {'method': 'get'}
+2023-02-17 18:40:43.533673  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:40:45.165835  Started secret_front with {'method': 'get'}
+2023-02-17 18:43:11.577754  Started secret_front with {'method': 'get'}
+2023-02-17 18:43:12.761659  Started secret_front with {'method': 'get'}
+2023-02-17 18:43:14.082005  Started secret_front with {'method': 'get'}
+2023-02-17 18:43:19.502049  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'the', 'create_category': 'Submit'}}
+2023-02-17 18:44:19.211962  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:44:25.233832  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'course', 'create_course': 'Submit'}}
+2023-02-17 18:44:27.128272  Started secret_front with {'method': 'get'}
+2023-02-17 18:44:32.578406  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:44:36.310895  Started secret_front with {'method': 'get', 'request_get_data': {'id': ''}}
+2023-02-17 18:46:31.424803  Started secret_front with {'method': 'get'}
+2023-02-17 18:46:33.890255  Started secret_front with {'method': 'get'}
+2023-02-17 18:46:38.958176  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Finish', 'create_category': 'Submit'}}
+2023-02-17 18:46:43.591147  Started secret_front with {'method': 'get'}
+2023-02-17 18:46:48.446271  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Start', 'create_category': 'Submit'}}
+2023-02-17 18:46:50.176494  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:46:56.263709  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'Joe', 'create_course': 'Submit'}}
+2023-02-17 18:47:00.288388  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:47:03.893559  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'Sam', 'create_course': 'Submit'}}
+2023-02-17 18:47:05.995521  Started secret_front with {'method': 'get'}
+2023-02-17 18:47:08.358343  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:47:09.773646  Started secret_front with {'method': 'get'}
+2023-02-17 18:47:13.857623  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 18:47:18.979421  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'Mary', 'create_course': 'Submit'}}
+2023-02-17 18:47:20.472249  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 18:47:25.430045  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'Mike', 'create_course': 'Submit'}}
+2023-02-17 18:47:28.591477  Started secret_front with {'method': 'get'}
+2023-02-17 18:47:30.190825  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 18:47:31.839588  Started secret_front with {'method': 'get'}
+2023-02-17 18:47:33.963297  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:47:35.172760  Started secret_front with {'method': 'get'}
+2023-02-17 18:49:00.905057  Started secret_front with {'method': 'get'}
+2023-02-17 18:49:01.888454  Started secret_front with {'method': 'get'}
+2023-02-17 18:49:02.672567  Started secret_front with {'method': 'get'}
+2023-02-17 18:49:03.571420  Started secret_front with {'method': 'get'}
+2023-02-17 18:49:04.755329  Started secret_front with {'method': 'get'}
+2023-02-17 18:49:05.635040  Started secret_front with {'method': 'get'}
+2023-02-17 18:49:09.887504  Started secret_front with {'method': 'get'}
+2023-02-17 18:49:23.087597  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Checkpoint', 'create_category': 'Submit'}}
+2023-02-17 18:50:08.813665  Started secret_front with {'method': 'get', 'request_get_data': {'id': '3'}}
+2023-02-17 18:50:16.036195  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'Leo', 'create_course': 'Submit'}}
+2023-02-17 18:50:20.030327  Started secret_front with {'method': 'get'}
+2023-02-17 18:50:29.032235  Started secret_front with {'method': 'get'}
+2023-02-17 18:50:37.419185  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Checkpoint', 'create_category': 'Submit'}}
+2023-02-17 18:53:36.896383  Started secret_front with {'method': 'get'}
+2023-02-17 18:53:44.363316  Started secret_front with {'method': 'get'}
+2023-02-17 18:53:49.767579  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'School', 'create_category': 'Submit'}}
+2023-02-17 18:53:53.311455  Started secret_front with {'method': 'get', 'request_get_data': {'id': '5'}}
+2023-02-17 18:53:56.802172  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'dfjkn', 'create_course': 'Submit'}}
+2023-02-17 18:53:58.712958  Started secret_front with {'method': 'get'}
+2023-02-17 18:54:00.678312  Started secret_front with {'method': 'get', 'request_get_data': {'id': '5'}}
+2023-02-17 18:54:01.996336  Started secret_front with {'method': 'get', 'request_get_data': {'id': '5'}}
+2023-02-17 18:54:04.608358  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'sdfsdfs', 'create_course': 'Submit'}}
+2023-02-17 18:54:06.111296  Started secret_front with {'method': 'get'}
+2023-02-17 18:54:08.252297  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:54:09.929518  Started secret_front with {'method': 'get'}
+2023-02-17 18:54:59.895263  Started secret_front with {'method': 'get'}
+2023-02-17 18:55:01.729816  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:55:03.430687  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:55:06.513268  Started secret_front with {'method': 'get'}
+2023-02-17 18:56:26.028060  Started secret_front with {'method': 'get'}
+2023-02-17 18:56:28.929340  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:57:58.813738  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:58:50.645691  Started secret_front with {'method': 'get'}
+2023-02-17 18:58:51.878622  Started secret_front with {'method': 'get'}
+2023-02-17 18:58:57.733524  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Update', 'create_category': 'Submit'}}
+2023-02-17 18:58:59.394257  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:59:07.416495  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'updated', 'create_course': 'Submit'}}
+2023-02-17 18:59:09.359959  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:59:11.993073  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 18:59:25.744842  Started secret_front with {'method': 'get'}
+2023-02-17 19:06:01.859363  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:11:44.507146  Started secret_front with {'method': 'get'}
+2023-02-17 19:11:45.656554  Started secret_front with {'method': 'get'}
+2023-02-17 19:11:47.690656  Started secret_front with {'method': 'get'}
+2023-02-17 19:11:50.478734  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'fghgf', 'create_category': 'Submit'}}
+2023-02-17 19:11:52.374414  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:11:55.519233  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'safe', 'create_course': 'Submit'}}
+2023-02-17 19:12:03.507104  Started secret_front with {'method': 'get', 'request_get_data': {'name': 'safe'}}
+2023-02-17 19:12:17.072896  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:12:19.424314  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:22:24.569175  Started secret_front with {'method': 'get'}
+2023-02-17 19:22:25.620133  Started secret_front with {'method': 'get'}
+2023-02-17 19:22:35.076019  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Copying', 'create_category': 'Submit'}}
+2023-02-17 19:22:37.036432  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:22:47.809039  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'copy_me', 'create_course': 'Submit'}}
+2023-02-17 19:22:52.303810  Started secret_front with {'method': 'get', 'request_get_data': {'name': 'copy_me'}}
+2023-02-17 19:23:04.986625  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:23:06.368983  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:23:12.419337  Started secret_front with {'method': 'get', 'request_get_data': {'name': 'copy_me'}}
+2023-02-17 19:23:17.019480  Started secret_front with {'method': 'get'}
+2023-02-17 19:23:18.968093  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:23:21.820221  Started secret_front with {'method': 'get', 'request_get_data': {'name': 'copy_me'}}
+2023-02-17 19:23:54.586683  Started secret_front with {'method': 'get'}
+2023-02-17 19:23:57.402971  Started secret_front with {'method': 'get'}
+2023-02-17 19:23:58.488936  Started secret_front with {'method': 'get'}
+2023-02-17 19:23:59.590937  Started secret_front with {'method': 'get'}
+2023-02-17 19:24:10.236297  Started secret_front with {'method': 'get'}
+2023-02-17 19:28:20.204372  Started secret_front with {'method': 'get'}
+2023-02-17 19:28:32.684584  Started secret_front with {'method': 'get'}
+2023-02-17 19:28:34.350842  Started secret_front with {'method': 'get'}
+2023-02-17 19:28:35.517840  Started secret_front with {'method': 'get'}
+2023-02-17 19:28:36.468360  Started secret_front with {'method': 'get'}
+2023-02-17 19:28:38.017809  Started secret_front with {'method': 'get'}
+2023-02-17 19:28:38.900529  Started secret_front with {'method': 'get'}
+2023-02-17 19:28:39.800619  Started secret_front with {'method': 'get'}
+2023-02-17 19:28:40.667835  Started secret_front with {'method': 'get'}
+2023-02-17 19:28:41.700444  Started secret_front with {'method': 'get'}
+2023-02-17 19:28:42.766493  Started secret_front with {'method': 'get'}
+2023-02-17 19:29:28.379004  Started secret_front with {'method': 'get'}
+2023-02-17 19:30:28.730505  Started secret_front with {'method': 'get'}
+2023-02-17 19:32:42.364018  Started secret_front with {'method': 'get'}
+2023-02-17 19:32:43.669210  Started secret_front with {'method': 'get'}
+2023-02-17 19:34:06.214998  Started secret_front with {'method': 'get'}
+2023-02-17 19:34:44.963584  Started secret_front with {'method': 'get'}
+2023-02-17 19:34:46.094437  Started secret_front with {'method': 'get'}
+2023-02-17 19:34:47.082823  Started secret_front with {'method': 'get'}
+2023-02-17 19:34:48.216787  Started secret_front with {'method': 'get'}
+2023-02-17 19:34:49.181352  Started secret_front with {'method': 'get'}
+2023-02-17 19:34:49.847834  Started secret_front with {'method': 'get'}
+2023-02-17 19:44:14.691861  Started secret_front with {'method': 'get'}
+2023-02-17 19:44:31.242715  Started secret_front with {'method': 'get'}
+2023-02-17 19:45:11.248274  Started secret_front with {'method': 'get'}
+2023-02-17 19:45:11.250144  Started secret_front with {'method': 'get'}
+2023-02-17 19:45:11.251217  Started secret_front with {'method': 'get'}
+2023-02-17 19:45:52.911456  Started secret_front with {'method': 'get'}
+2023-02-17 19:46:22.077052  Started secret_front with {'method': 'get'}
+2023-02-17 19:46:24.977014  Started secret_front with {'method': 'get'}
+2023-02-17 19:46:31.067396  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Last test', 'create_category': 'Submit'}}
+2023-02-17 19:46:35.843626  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:46:43.582508  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'Get pay', 'create_course': 'Submit'}}
+2023-02-17 19:46:48.610097  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:46:58.989543  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'Spend all money', 'create_course': 'Submit'}}
+2023-02-17 19:47:04.039442  Started secret_front with {'method': 'get'}
+2023-02-17 19:47:07.059661  Started secret_front with {'method': 'get'}
+2023-02-17 19:47:15.982693  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Ready to commit', 'create_category': 'Submit'}}
+2023-02-17 19:47:19.177924  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:47:25.094107  Started secret_front with {'method': 'get', 'request_get_data': {'name': 'Get pay'}}
+2023-02-17 19:47:30.292717  Started secret_front with {'method': 'get'}
+2023-02-17 19:47:36.944244  Started secret_front with {'method': 'get'}
+2023-02-17 19:47:37.909191  Started secret_front with {'method': 'get'}
+2023-02-17 19:47:40.311852  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 19:47:47.593775  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'and push', 'create_course': 'Submit'}}
+2023-02-17 19:47:49.527513  Started secret_front with {'method': 'get'}
+2023-02-17 19:47:52.127536  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-17 19:47:53.445381  Started secret_front with {'method': 'get'}
+2023-02-17 19:47:54.796018  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:48:00.547390  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:48:01.895473  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-17 19:48:04.595936  Started secret_front with {'method': 'get'}
+2023-02-17 19:48:06.526882  Started secret_front with {'method': 'get'}
