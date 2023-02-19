@@ -798,3 +798,69 @@
 2023-02-17 19:48:01.895473  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
 2023-02-17 19:48:04.595936  Started secret_front with {'method': 'get'}
 2023-02-17 19:48:06.526882  Started secret_front with {'method': 'get'}
+2023-02-17 19:50:45.657284  Started secret_front with {'method': 'get'}
+2023-02-17 19:50:49.759734  Started secret_front with {'method': 'get'}
+2023-02-17 19:50:51.027003  Started secret_front with {'method': 'get'}
+2023-02-17 19:50:52.261547  Started secret_front with {'method': 'get'}
+2023-02-17 19:50:53.479890  Started secret_front with {'method': 'get'}
+2023-02-17 19:50:55.045797  Started secret_front with {'method': 'get'}
+2023-02-17 19:50:58.166421  Started secret_front with {'method': 'get'}
+2023-02-17 19:50:59.252153  Started secret_front with {'method': 'get'}
+2023-02-19 11:30:18.296706  Started secret_front with {'method': 'get'}
+2023-02-19 11:30:22.112410  Started secret_front with {'method': 'get'}
+2023-02-19 11:30:24.381737  Started secret_front with {'method': 'get'}
+2023-02-19 11:30:25.764603  Started secret_front with {'method': 'get'}
+2023-02-19 11:30:41.256541  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'post category', 'create_category': 'Submit'}}
+2023-02-19 11:30:45.601027  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-19 11:31:11.055043  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'creating post queries course', 'create_course': 'Submit'}}
+2023-02-19 11:31:14.166874  Started secret_front with {'method': 'get'}
+2023-02-19 11:31:15.901263  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-19 11:31:22.598943  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-19 11:31:29.312261  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'second part', 'create_course': 'Submit'}}
+2023-02-19 11:31:32.131930  Started secret_front with {'method': 'get'}
+2023-02-19 11:31:33.849146  Started secret_front with {'method': 'get'}
+2023-02-19 11:31:45.555463  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'get category', 'create_category': 'Submit'}}
+2023-02-19 11:31:50.035752  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-19 11:31:54.865489  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'dslkflk 2', 'create_course': 'Submit'}}
+2023-02-19 11:31:58.519944  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-19 11:32:00.168805  Started secret_front with {'method': 'get', 'request_get_data': {'id': '2'}}
+2023-02-19 11:32:02.018451  Started secret_front with {'method': 'get'}
+2023-02-19 11:32:02.803069  Started secret_front with {'method': 'get'}
+2023-02-19 11:32:04.121066  Started secret_front with {'method': 'get'}
+2023-02-19 11:35:00.120352  Started secret_front with {'method': 'get'}
+2023-02-19 13:32:09.353264  Started secret_front with {'method': 'get'}
+2023-02-19 13:32:13.191632  Started secret_front with {'method': 'get'}
+2023-02-19 14:08:10.799387  Started secret_front with {'method': 'get'}
+2023-02-19 14:08:14.427232  Started secret_front with {'method': 'get'}
+2023-02-19 14:08:18.316134  Started secret_front with {'method': 'get'}
+2023-02-19 14:51:36.386566  Started secret_front with {'method': 'get'}
+2023-02-19 14:51:38.035880  Started secret_front with {'method': 'get'}
+2023-02-19 14:51:39.702709  Started secret_front with {'method': 'get'}
+2023-02-19 14:51:42.112840  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'вап', 'create_category': 'Submit'}}
+2023-02-19 14:51:43.487177  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-19 14:51:46.022749  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'ваппп', 'create_course': 'Submit'}}
+2023-02-19 20:35:47.633141  Started secret_front with {'method': 'get'}
+2023-02-19 20:35:49.894794  Started secret_front with {'method': 'get'}
+2023-02-19 20:35:51.652724  Started secret_front with {'method': 'get'}
+2023-02-19 20:35:56.466841  Started secret_front with {'method': 'get'}
+2023-02-19 20:39:53.983596  Started secret_front with {'method': 'get'}
+2023-02-19 20:39:55.369419  Started secret_front with {'method': 'get'}
+2023-02-19 20:40:02.533344  Started secret_front with {'method': 'post', 'request_post_data': {'category_name': 'Math', 'create_category': 'Submit'}}
+2023-02-19 20:40:03.715404  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-19 20:40:24.452030  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'on monday', 'create_course': 'Submit'}}
+2023-02-19 20:40:28.116253  Started secret_front with {'method': 'get'}
+2023-02-19 20:40:29.416581  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-19 20:40:30.502457  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-19 20:40:44.069798  Started secret_front with {'method': 'post', 'request_post_data': {'course_name': 'on Tuesday', 'create_course': 'Submit'}}
+2023-02-19 20:40:46.236759  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-19 20:40:47.131383  Started secret_front with {'method': 'get', 'request_get_data': {'id': '1'}}
+2023-02-19 20:40:48.917257  Started secret_front with {'method': 'get'}
+2023-02-19 23:08:48.926164  Started secret_front with {'method': 'get'}
+2023-02-19 23:17:16.207119  Started secret_front with {'method': 'get'}
+2023-02-19 23:17:50.341098  Started secret_front with {'method': 'get'}
+2023-02-19 23:20:03.143392  Started secret_front with {'method': 'get'}
+2023-02-19 23:22:56.357911  Started secret_front with {'method': 'get'}
+2023-02-19 23:22:57.625101  Started secret_front with {'method': 'get'}
+2023-02-19 23:22:58.743245  Started secret_front with {'method': 'get'}
+2023-02-19 23:23:00.126291  Started secret_front with {'method': 'get'}
+2023-02-19 23:23:02.230534  Started secret_front with {'method': 'get'}
