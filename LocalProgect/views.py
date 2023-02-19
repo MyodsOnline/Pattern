@@ -1,14 +1,19 @@
 from framework.templator import render
 from logger.logger_config import Logger
 from engine import Engine
+from pattern.structural_patterns import AppRoutes, Debug
 
 
 logger = Logger('views')
 creation_logs = Logger('create')
 site = Engine()
 
+routes = {}
 
+
+@AppRoutes(routes=routes, url='/')
 class Index:
+    @Debug(name='Index')
     def __call__(self, request):
         logger.log(f'Load Index page with {request["method"]}')
         return '200 OK', render(template_name='index.html',
@@ -16,7 +21,9 @@ class Index:
                                 date=request.get('secret', None))
 
 
+@AppRoutes(routes=routes, url='/other/')
 class Other:
+    @Debug(name='Other')
     def __call__(self, request):
         logger.log(f'Load Other page with {request["method"]}')
         return '200 OK', render(template_name='other.html',
@@ -25,7 +32,9 @@ class Other:
                                 description=request.get('description'))
 
 
+@AppRoutes(routes=routes, url='/home/')
 class HomeView:
+    @Debug(name='HomeView')
     def __call__(self, request):
         logger.log('Load Home page')
         return '200 OK', render(template_name='home.html',
@@ -34,20 +43,25 @@ class HomeView:
                                 path=request.get('path'))
 
 
+@AppRoutes(routes=routes, url='/contact/')
 class ContactView:
+    @Debug(name='ContactView')
     def __call__(self, request):
         logger.log('Load Post page')
         return '200 OK', render(template_name='contacts.html',
                                 title='Post page')
 
 
+@AppRoutes(routes=routes, url='error404')
 class PageNotFound404:
     def __call__(self, request):
         logger.log('Load 404 page')
         return '404 WHAT', '<h1>404. Page Not Found</h1>'
 
 
+@AppRoutes(routes=routes, url='/category-list/')
 class CategoryList:
+    @Debug(name='CategoryList')
     def __call__(self, request):
         logger.log('Список категорий')
         return '200 OK', render(template_name='category_list.html',
@@ -55,6 +69,7 @@ class CategoryList:
                                 title='Categories',)
 
 
+@AppRoutes(routes=routes, url='/create-category/')
 class CreateCategory:
     def __call__(self, request):
         if request['method'] == 'post':
@@ -87,6 +102,7 @@ class CreateCategory:
                                     title='Categories',)
 
 
+@AppRoutes(routes=routes, url='/create-course/')
 class CreateCourse:
     category_id = -1
 
@@ -126,7 +142,9 @@ class CreateCourse:
                 return '200 OK', 'No categories have been added yet'
 
 
+@AppRoutes(routes=routes, url='/courses-list/')
 class CoursesList:
+    @Debug(name='CoursesList')
     def __call__(self, request):
         try:
             category = site.find_category_by_id(
@@ -140,6 +158,7 @@ class CoursesList:
             return '200 OK', 'No courses have been added yet'
 
 
+@AppRoutes(routes=routes, url='/copy-course/')
 class CopyCourse:
     def __call__(self, request):
         request_params = request['request_get_data']
