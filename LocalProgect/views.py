@@ -2,6 +2,7 @@ from framework.templator import render
 from logger.logger_config import Logger
 from engine import Engine
 from pattern.structural_patterns import AppRoutes, Debug
+from framework.server import FakeApplication
 
 
 logger = Logger('views')
