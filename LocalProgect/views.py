@@ -2,6 +2,7 @@ from framework.templator import render
 from logger.logger_config import Logger
 from engine import Engine
 from pattern.structural_patterns import AppRoutes, Debug
+from pattern.behavioral_patterns import CreateView, ListView
 from framework.server import FakeApplication
 
 
@@ -180,3 +181,23 @@ class CopyCourse:
 
         except KeyError:
             return '200 OK', 'No courses have been added yet'
+
+
+@AppRoutes(routes=routes, url='/user-list/')
+class StudentListView(ListView):
+    queryset = site.students
+    print(queryset)
+    template_name = 'user_list.html'
+
+
+@AppRoutes(routes=routes, url='/create-user/')
+class UserCreateView(CreateView):
+    template_name = 'create_user.html'
+
+    def create_obj(self, data: dict):
+        print(f'DATA FROM VIEW - {data}')
+        name = site.decode_value(data['user_name'])
+        role = site.decode_value(data['user_type_select'])
+        new_obj = site.create_user(role, name)
+        site.students.append(new_obj)
+        print(f'Student {name} with {role} created')

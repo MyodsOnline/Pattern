@@ -1,6 +1,6 @@
 from quopri import decodestring
 
-from pattern.pattern import CourseFactory, Category
+from pattern.pattern import CourseFactory, Category, UserFactory
 
 
 class Engine:
@@ -8,6 +8,12 @@ class Engine:
     def __init__(self):
         self.categories_list = []
         self.courses = []
+        self.teachers = []
+        self.students = []
+
+    @staticmethod
+    def create_user(type_, name):
+        return UserFactory.create(type_, name)
 
     @staticmethod
     def create_category(name, category=None):
@@ -28,6 +34,11 @@ class Engine:
             if item.name == name:
                 return item
         return Exception(f'Course {name} not found.')
+
+    def get_student(self, name):
+        for student in self.students:
+            if student.name == name:
+                return student
 
     @staticmethod
     def decode_value(val):

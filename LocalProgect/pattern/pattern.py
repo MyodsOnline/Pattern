@@ -1,6 +1,33 @@
 from copy import deepcopy
 
 
+class User:
+    def __init__(self, name):
+        self.name = name
+
+
+class Teacher(User):
+    pass
+
+
+class Student(User):
+    def __init__(self, name):
+        self.courses = []
+        super().__init__(name)
+
+
+class UserFactory:
+    types = {
+        'student': Student,
+        'teacher': Teacher,
+    }
+
+    @classmethod
+    def create(cls, type_, name):
+        print(f'FROM PATTERN {type_}, {name}')
+        return cls.types[type_](name)
+
+
 class CoursePrototype:
 
     def clone(self):
@@ -13,6 +40,11 @@ class Course(CoursePrototype):
         self.name = name
         self.category = category
         self.category.courses.append(self)
+        self.students = []
+
+    def add_student(self, student: Student):
+        self.students.append(student)
+        student.courses.append(self)
 
 
 class InteractiveCourse(Course):

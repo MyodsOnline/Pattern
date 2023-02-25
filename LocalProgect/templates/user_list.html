@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block maincontent %}
+
+    {% if objects_list %}
+        <h1>Categories list</h1>
+        <ul>
+            {% for user in objects_list %}
+                <li>
+                    <p>{{user.name}}.</p>
+                    <p>{{user.role}}.</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h1>There are no users yet</h1>
+    {% endif %}
+    <a href="/create-user/" class="like_a_button">Create a new user</a>
+{% endblock %}
