@@ -1,3 +1,4 @@
+from datetime import datetime
 from Pattern.LocalProgect.framework.query_requests import PostRequests, GetRequest
 
 
@@ -12,14 +13,14 @@ class Application:
 
         if request['method'] == 'post':
             post_data = PostRequests().get_request_params(environ)
-            print(post_data)
-            request['request_post_data'] = post_data
+            # print(post_data)
+            request['request_data'] = post_data
             self.write_file(post_data)
         if request['method'] == 'get':
             get_data = GetRequest().get_request_params(environ)
-            print(get_data)
+            # print(get_data)
             if len(get_data) > 0:
-                request['request_get_data'] = get_data
+                request['request_data'] = get_data
                 self.write_file(get_data)
 
         if not path.endswith('/'):
@@ -39,10 +40,11 @@ class Application:
         return [body.encode('utf-8')]
 
     def write_file(self, request_data):
-        with open('fixtures/request.txt', 'w', encoding='utf-8') as file:
+        timestamp = datetime.now().strftime('%y.%m.%d %H:%M:%S')
+        with open('fixtures/request.txt', 'a+', encoding='utf-8') as file:
             for k, v in request_data.items():
                 line = f'{k}: {v}\n'
-                file.write(line)
+            file.write(f'{timestamp}: {line}')
 
 
 # Новый вид WSGI-application.

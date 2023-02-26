@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+﻿{% extends "base.html" %}
 
 {% block special_css %}
     <style>
@@ -45,25 +45,37 @@
             height: 30px;
             border: 1px solid lightslategray;
          }
+         select {
+            width: 250px;
+         }
     </style>
 {% endblock %}
 
 {% block maincontent %}
     <div class="formContainer">
-        <h1 class="centerMe">User creator</h1>
-        <form action="#" method="post">
+        <h1 class="centerMe">Adding to the course</h1>
+        <form method="post">
             <div class="form_settings">
-                <p>
-                    <label for="user_name">Name:</label>
-                    <input id="user_name" type="text" name="user_name">
-                    <label for="user_type_select">Role:</label>
-                    <select name="user_type_select" id="user_type_select">
-                      <option value="student">Student</option>
-                      <option value="teacher">Teacher</option>
-                    </select>
-                </p>
+                <div class="double_col">
+                    <div class="single_col">
+                        <h3>Available courses:</h3>
+                        <select size="6" name="course_name">
+                            {% for item in courses %}
+                            <option value="{{item.name}}">{{item.name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="single_col">
+                        <h3>Available students:</h3>
+                        <select size="6" name="student_name">
+                            {% for item in students %}
+                            <option value="{{item.name}}">{{item.name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
                 <p class="centerMeButtons">
-                    <input class="submit" type="submit" name="create_user" value="Submit">
+                    <input class="submit" type="submit" name="add_student" value="Add">
                     <a href="/user-list/" class="like_a_button">Cancel</a>
                 </p>
             </div>
