@@ -2,12 +2,15 @@ from framework.templator import render
 from logger.logger_config import Logger
 from engine import Engine
 from pattern.structural_patterns import AppRoutes, Debug
+from pattern.behavioral_patterns import CreateView, ListView, SMS_Notifier, EMAIL_Notifier
 from framework.server import FakeApplication
 
 
 logger = Logger('views')
 creation_logs = Logger('create')
 site = Engine()
+email_notifier = EMAIL_Notifier()
+sms_notifier = SMS_Notifier()
 
 routes = {}
 
@@ -74,7 +77,7 @@ class CategoryList:
 class CreateCategory:
     def __call__(self, request):
         if request['method'] == 'post':
-            data = request['request_post_data']
+            data = request['request_data']
             if len(data['category_name']) > 0:
                 category_name = data['category_name']
             else:
@@ -109,7 +112,7 @@ class CreateCourse:
 
     def __call__(self, request):
         if request['method'] == 'post':
-            post_data = request['request_post_data']
+            post_data = request['request_data']
             course_name = post_data['course_name']
 
             creation_logs.log(f'Create new category - {course_name}')
@@ -121,9 +124,10 @@ class CreateCourse:
                 category = site.find_category_by_id(int(self.category_id))
                 print(category.courses)
                 course = site.create_course('online', course_name, category)
+                course.observers.append(sms_notifier)
+                course.observers.append(email_notifier)
                 # add a variable course type
                 site.courses.append(course)
-                print(course.__dict__)
 
             return '200 OK', render(template_name='course_list.html',
                                     courses_list=category.courses,
@@ -132,7 +136,7 @@ class CreateCourse:
                                     title='Courses')
         else:
             try:
-                self.category_id = int(request['request_get_data']['id'])
+                self.category_id = int(request['request_data']['id'])
                 category = site.find_category_by_id(int(self.category_id))
 
                 return '200 OK', render(template_name='create_course.html',
@@ -149,7 +153,7 @@ class CoursesList:
     def __call__(self, request):
         try:
             category = site.find_category_by_id(
-                int(request['request_get_data']['id']))
+                int(request['request_data']['id']))
             return '200 OK', render(template_name='course_list.html',
                                     courses_list=category.courses,
                                     category_name=category.name,
@@ -162,7 +166,7 @@ class CoursesList:
 @AppRoutes(routes=routes, url='/copy-course/')
 class CopyCourse:
     def __call__(self, request):
-        request_params = request['request_get_data']
+        request_params = request['request_data']
 
         try:
             name = request_params['name']
@@ -180,3 +184,48 @@ class CopyCourse:
 
         except KeyError:
             return '200 OK', 'No courses have been added yet'
+
+
+@AppRoutes(routes=routes, url='/user-list/')
+class UserListView(ListView):
+    queryset = {'students': site.students,
+                'teachers': site.teachers}
+    title = 'Users list'
+    template_name = 'user_list.html'
+
+
+@AppRoutes(routes=routes, url='/create-user/')
+class UserCreateView(CreateView):
+    template_name = 'create_user.html'
+    title = 'User create'
+
+    def create_obj(self, data: dict):
+        name = site.decode_value(data['user_name'])
+        role = site.decode_value(data['user_type_select'])
+        new_obj = site.create_user(role, name)
+
+        if role == 'teacher':
+            site.teachers.append(new_obj)
+        else:
+            site.students.append(new_obj)
+
+        print(f'User {name} with role {role} created')
+
+
+@AppRoutes(routes=routes, url='/add-student/')
+class AddStudentByCourseCreateView(CreateView):
+    template_name = 'add_student.html'
+    title = 'Add student'
+
+    def get_context_data(self):
+        context = super().get_context_data()
+        context['courses'] = site.courses
+        context['students'] = site.students
+        return context
+
+    def create_obj(self, data: dict):
+        course_name = site.decode_value(data['course_name'])
+        course = site.get_course(course_name)
+        student_name = site.decode_value(data['student_name'])
+        student = site.get_student(student_name)
+        course.add_student(student)

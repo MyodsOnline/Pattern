@@ -1,5 +1,35 @@
 from copy import deepcopy
 
+from Pattern.LocalProgect.pattern.behavioral_patterns import Subject
+
+
+class User:
+    def __init__(self, name):
+        self.name = name
+
+
+class Teacher(User):
+    def __init__(self, name):
+        self.courses = []
+        super().__init__(name)
+
+
+class Student(User):
+    def __init__(self, name):
+        self.courses = []
+        super().__init__(name)
+
+
+class UserFactory:
+    types = {
+        'student': Student,
+        'teacher': Teacher,
+    }
+
+    @classmethod
+    def create(cls, type_, name):
+        return cls.types[type_](name)
+
 
 class CoursePrototype:
 
@@ -7,12 +37,22 @@ class CoursePrototype:
         return deepcopy(self)
 
 
-class Course(CoursePrototype):
+class Course(CoursePrototype, Subject):
 
     def __init__(self, name, category):
         self.name = name
         self.category = category
         self.category.courses.append(self)
+        self.students = []
+        super().__init__()
+
+    def __getitem__(self, item):
+        return self.students[item]
+
+    def add_student(self, student: Student):
+        self.students.append(student)
+        student.courses.append(self)
+        self.notify()
 
 
 class InteractiveCourse(Course):

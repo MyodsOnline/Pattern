@@ -9,6 +9,7 @@
             {% for course in courses_list %}
                 <li>
                     {{course.name}} (<span class="greenColor">{{ course.type }}</span>).
+                    {% if course.students %}GOGOGOG{% endif %}
                     <a href="/copy-course/?name={{course.name}}">Copy</a>
                 </li>
             {% endfor %}

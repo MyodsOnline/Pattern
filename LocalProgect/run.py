@@ -1,7 +1,6 @@
 from wsgiref.simple_server import make_server
 
 from framework.server import Application
-# from urls import routes
 from fronts import fronts
 from views import routes
 
