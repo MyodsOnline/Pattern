@@ -3,7 +3,8 @@ from logger.logger_config import Logger
 from engine import Engine
 from pattern.structural_patterns import AppRoutes, Debug
 from pattern.behavioral_patterns import CreateView, ListView, SMS_Notifier, EMAIL_Notifier
-from framework.server import FakeApplication
+from pattern.unit_of_work import UnitOfWork
+from pattern.data_mapper import MapperRegistry
 
 
 logger = Logger('views')
@@ -13,6 +14,9 @@ email_notifier = EMAIL_Notifier()
 sms_notifier = SMS_Notifier()
 
 routes = {}
+
+UnitOfWork.new_current()
+UnitOfWork.get_current().set_mapper_registry(MapperRegistry)
 
 
 @AppRoutes(routes=routes, url='/')
@@ -188,10 +192,16 @@ class CopyCourse:
 
 @AppRoutes(routes=routes, url='/user-list/')
 class UserListView(ListView):
-    queryset = {'students': site.students,
-                'teachers': site.teachers}
+    # queryset = {'students': site.students, 'teachers': site.teachers}
+    queryset = {'teachers': site.teachers}
     title = 'Users list'
     template_name = 'user_list.html'
+
+    def get_queryset(self):
+        mapper = MapperRegistry.get_current_mapper('student')
+        site.students = mapper.all()
+        self.queryset['students'] = site.students
+        return self.queryset
 
 
 @AppRoutes(routes=routes, url='/create-user/')
@@ -208,6 +218,9 @@ class UserCreateView(CreateView):
             site.teachers.append(new_obj)
         else:
             site.students.append(new_obj)
+
+        new_obj.mark_new()
+        UnitOfWork.get_current().commit()
 
         print(f'User {name} with role {role} created')
 
