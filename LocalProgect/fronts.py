@@ -6,7 +6,7 @@ from logger.logger_config import Logger
 
 
 logger = Logger('fronts')
-JSON_FILE_PATH = os.path.join('fixtures', 'data.json')
+JSON_FILE_PATH = os.path.join('fixtures', 'antipatterns.json')
 
 
 def load_json():
