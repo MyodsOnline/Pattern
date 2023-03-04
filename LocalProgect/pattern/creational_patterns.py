@@ -1,6 +1,7 @@
 from copy import deepcopy
 
 from Pattern.LocalProgect.pattern.behavioral_patterns import Subject
+from Pattern.LocalProgect.pattern.unit_of_work import DomainObject
 
 
 class User:
@@ -14,7 +15,7 @@ class Teacher(User):
         super().__init__(name)
 
 
-class Student(User):
+class Student(User, DomainObject):
     def __init__(self, name):
         self.courses = []
         super().__init__(name)
