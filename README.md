@@ -1,4 +1,4 @@
-# Learning project: *Architecture and Design Patterns in Python*
+# Learning project:<br>Architecture and Design Patterns in Python</br>
 ```
 During the course, were studied the basics of:
 ```
