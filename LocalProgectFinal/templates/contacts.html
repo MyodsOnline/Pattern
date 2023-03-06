@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block special_css %}
+    <style>
+        .formContainer {
+             width: 600px;
+             margin: 0 auto;
+         }
+         .formContainer label {
+             display: inline-block;
+             width: 50px;
+         }
+         .formContainer p {
+             display: flex;
+         }
+         #user-name, #user-mail {
+             width: 530px;
+             height: 30px;
+             border: 1px solid lightslategray;
+         }
+         #user-text {
+             width: 528px;
+             border: 1px solid lightslategray;
+         }
+         input[type=submit] {
+             padding: 10px 50px;
+             background-color:lightgray;
+             border: 0 none;
+             cursor: pointer;
+             border-radius: 5px;
+             font-size: 1.2em;
+         }
+    </style>
+{% endblock %}
+
+{% block maincontent %}
+    <div class="formContainer">
+        <h1 class="centerMe">Contact Us</h1>
+        <h3 class="centerMe">This is an example of how a contact form might look:</h3>
+        <form action="#" method="post">
+            <div class="form_settings">
+                <p>
+                    <label for="user-name">Name:</label>
+                    <input id="user-name" type="text" name="name">
+                </p>
+                <p>
+                    <label for="user-mail">Email:</label>
+                    <input id="user-mail" type="email" name="email">
+                </p>
+                <p>
+                    <label for="user-text">Text:</label>
+                    <textarea id="user-text" rows="8" cols="50" name="text"></textarea>
+                </p>
+                <p class="centerMe">
+                    <input class="submit" type="submit" name="contact_submitted" value="submit">
+                </p>
+            </div>
+        </form>
+    </div>
+{% endblock %}

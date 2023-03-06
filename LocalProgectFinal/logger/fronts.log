@@ -908,3 +908,30 @@
 2023-03-02 18:39:13.154202  Started secret_front with {'method': 'get'}
 2023-03-02 18:39:30.936332  Started secret_front with {'method': 'post', 'request_data': {'user_name': 'Third_user', 'user_type_select': 'teacher', 'create_user': 'Submit'}}
 2023-03-02 18:39:56.195448  Started secret_front with {'method': 'post', 'request_data': {'user_name': 'Third_user', 'user_type_select': 'student', 'create_user': 'Submit'}}
+2023-03-02 18:57:08.674801  Started secret_front with {'method': 'get'}
+2023-03-02 18:57:18.808823  Started secret_front with {'method': 'get'}
+2023-03-02 18:57:40.329081  Started secret_front with {'method': 'get'}
+2023-03-02 18:57:43.280828  Started secret_front with {'method': 'post', 'request_data': {'user_name': 'gfhfghfh', 'user_type_select': 'student', 'create_user': 'Submit'}}
+2023-03-02 18:57:45.030880  Started secret_front with {'method': 'get'}
+2023-03-02 18:57:48.900476  Started secret_front with {'method': 'get'}
+2023-03-02 18:58:03.492946  Started secret_front with {'method': 'post', 'request_data': {'user_name': 'Third_student', 'user_type_select': 'student', 'create_user': 'Submit'}}
+2023-03-02 18:58:06.158989  Started secret_front with {'method': 'get'}
+2023-03-02 19:48:40.481672  Started secret_front with {'method': 'get'}
+2023-03-02 19:48:49.031813  Started secret_front with {'method': 'get'}
+2023-03-02 19:51:10.673259  Started secret_front with {'method': 'get'}
+2023-03-02 19:51:10.682235  Started secret_front with {'method': 'get'}
+2023-03-02 19:51:10.785957  Started secret_front with {'method': 'get'}
+2023-03-02 19:52:58.930606  Started secret_front with {'method': 'get'}
+2023-03-06 21:10:36.246507  Started secret_front with {'method': 'get'}
+2023-03-06 21:10:36.507245  Started secret_front with {'method': 'get'}
+2023-03-06 21:10:38.211729  Started secret_front with {'method': 'get'}
+2023-03-06 21:13:40.374950  Started secret_front with {'method': 'get'}
+2023-03-06 21:13:43.533723  Started secret_front with {'method': 'get'}
+2023-03-06 21:40:33.689250  Started secret_front with {'method': 'get'}
+2023-03-06 21:40:34.846778  Started secret_front with {'method': 'get'}
+2023-03-06 21:40:35.956602  Started secret_front with {'method': 'get'}
+2023-03-06 21:40:45.685195  Started secret_front with {'method': 'post', 'request_data': {'user_name': 'first_user', 'user_type_select': 'student', 'create_user': 'Submit'}}
+2023-03-06 21:40:56.512247  Started secret_front with {'method': 'post', 'request_data': {'user_name': 'second_stident', 'user_type_select': 'student', 'create_user': 'Submit'}}
+2023-03-06 21:41:07.722850  Started secret_front with {'method': 'post', 'request_data': {'user_name': 'first_teacher', 'user_type_select': 'teacher', 'create_user': 'Submit'}}
+2023-03-06 21:41:16.433912  Started secret_front with {'method': 'post', 'request_data': {'user_name': 'second_teacher', 'user_type_select': 'teacher', 'create_user': 'Submit'}}
+2023-03-06 21:41:17.784840  Started secret_front with {'method': 'get'}

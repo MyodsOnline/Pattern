@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block special_css %}
+    <style>
+        .formContainer {
+             width: 600px;
+             margin: 0 auto;
+         }
+         .formContainer label {
+             display: inline-block;
+             width: 50px;
+         }
+         .formContainer p {
+             display: flex;
+         }
+         #course_name {
+             width: 530px;
+             height: 30px;
+             border: 1px solid lightslategray;
+         }
+         input[type=submit] {
+             padding: 10px 50px;
+             background-color:lightgray;
+             border: 0 none;
+             cursor: pointer;
+             border-radius: 5px;
+             font-size: 1.2em;
+             font-family: -apple-system;
+         }
+         .centerMeButtons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+         }
+         .centerMeButtons .like_a_button {
+            margin: 0;
+            background: burlywood;
+            width: 120px;
+            text-align: center;
+            display: block;
+            font-family: -apple-system;
+         }
+    </style>
+{% endblock %}
+
+{% block maincontent %}
+    <div class="formContainer">
+        <h1 class="centerMe">Course creator for {{ category_name }}</h1>
+        <form action="#" method="post">
+            <div class="form_settings">
+                <p>
+                    <label for="course_name">Name:</label>
+                    <input id="course_name" type="text" name="course_name">
+                </p>
+                <p class="centerMeButtons">
+                    <input class="submit" type="submit" name="create_course" value="Submit">
+                    <a href="/courses-list/?id={{category_id}}" class="like_a_button">Cancel</a>
+                </p>
+            </div>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block maincontent %}
+
+    {% if users_list.students or users_list.teachers %}
+        <div class="double_col">
+            {% if users_list.students %}
+            <div class="single_col">
+                <h1>Students list:</h1>
+                <ul>
+                    {% for student in users_list.students %}
+                        <li>
+                            <p>{{student.name}}.</p>
+                            {% if student.courses %} GOGOGOGO {% endif %}
+                            <a href="/add-student/">Add to course</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            {% if users_list.teachers %}
+            <div class="single_col">
+                <h1>Teachers list:</h1>
+                <ul>
+                    {% for teacher in users_list.teachers %}
+                        <li>
+                            <p>{{teacher.name}}.</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    {% else %}
+        <h1>There are no users yet</h1>
+    {% endif %}
+    <a href="/create-user/" class="like_a_button">Create a new user</a>
+{% endblock %}

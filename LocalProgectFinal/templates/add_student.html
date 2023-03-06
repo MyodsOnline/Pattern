@@ -1,0 +1,84 @@
+﻿{% extends "base.html" %}
+
+{% block special_css %}
+    <style>
+        .formContainer {
+             width: 600px;
+             margin: 0 auto;
+         }
+         .formContainer label {
+             display: inline-block;
+             width: 50px;
+         }
+         .formContainer p {
+             display: flex;
+         }
+         #user_name {
+             width: 450px;
+             margin-right: 10px;
+             height: 30px;
+             border: 1px solid lightslategray;
+         }
+         input[type=submit] {
+             padding: 10px 50px;
+             background-color:lightgray;
+             border: 0 none;
+             cursor: pointer;
+             border-radius: 5px;
+             font-size: 1.2em;
+             font-family: -apple-system;
+         }
+         .centerMeButtons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+         }
+         .centerMeButtons .like_a_button {
+            margin: 0;
+            background: burlywood;
+            width: 120px;
+            text-align: center;
+            display: block;
+            font-family: -apple-system;
+         }
+         #user_type_select {
+            height: 30px;
+            border: 1px solid lightslategray;
+         }
+         select {
+            width: 250px;
+         }
+    </style>
+{% endblock %}
+
+{% block maincontent %}
+    <div class="formContainer">
+        <h1 class="centerMe">Adding to the course</h1>
+        <form method="post">
+            <div class="form_settings">
+                <div class="double_col">
+                    <div class="single_col">
+                        <h3>Available courses:</h3>
+                        <select size="6" name="course_name">
+                            {% for item in courses %}
+                            <option value="{{item.name}}">{{item.name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="single_col">
+                        <h3>Available students:</h3>
+                        <select size="6" name="student_name">
+                            {% for item in students %}
+                            <option value="{{item.name}}">{{item.name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <p class="centerMeButtons">
+                    <input class="submit" type="submit" name="add_student" value="Add">
+                    <a href="/user-list/" class="like_a_button">Cancel</a>
+                </p>
+            </div>
+        </form>
+    </div>
+{% endblock %}
