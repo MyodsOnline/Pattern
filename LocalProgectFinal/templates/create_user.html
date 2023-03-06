@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block special_css %}
+    <style>
+        .formContainer {
+             width: 600px;
+             margin: 0 auto;
+         }
+         .formContainer label {
+             display: inline-block;
+             width: 50px;
+         }
+         .formContainer p {
+             display: flex;
+         }
+         #user_name {
+             width: 450px;
+             margin-right: 10px;
+             height: 30px;
+             border: 1px solid lightslategray;
+         }
+         input[type=submit] {
+             padding: 10px 50px;
+             background-color:lightgray;
+             border: 0 none;
+             cursor: pointer;
+             border-radius: 5px;
+             font-size: 1.2em;
+             font-family: -apple-system;
+         }
+         .centerMeButtons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+         }
+         .centerMeButtons .like_a_button {
+            margin: 0;
+            background: burlywood;
+            width: 120px;
+            text-align: center;
+            display: block;
+            font-family: -apple-system;
+         }
+         #user_type_select {
+            height: 30px;
+            border: 1px solid lightslategray;
+         }
+    </style>
+{% endblock %}
+
+{% block maincontent %}
+    <div class="formContainer">
+        <h1 class="centerMe">User creator</h1>
+        <form action="#" method="post">
+            <div class="form_settings">
+                <p>
+                    <label for="user_name">Name:</label>
+                    <input id="user_name" type="text" name="user_name">
+                    <label for="user_type_select">Role:</label>
+                    <select name="user_type_select" id="user_type_select">
+                      <option value="student">Student</option>
+                      <option value="teacher">Teacher</option>
+                    </select>
+                </p>
+                <p class="centerMeButtons">
+                    <input class="submit" type="submit" name="create_user" value="Submit">
+                    <a href="/user-list/" class="like_a_button">Cancel</a>
+                </p>
+            </div>
+        </form>
+    </div>
+{% endblock %}

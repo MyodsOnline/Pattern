@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block maincontent %}
+    <h2>Данные выгружены из файла: {{ path }}</h2>
+    {% for el in date %}
+        <h3>{{ el['title'] }}</h3>
+        <p>{{ el['description'] }}</p> <mark>{{ el['correction'] }}</mark>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block maincontent %}
+
+    {% if category_name %}
+        <h1>Courses list for {{ category_name }} category</h1>
+        <ul>
+            {% for course in courses_list %}
+                <li>
+                    {{course.name}} (<span class="greenColor">{{ course.type }}</span>).
+                    {% if course.students %}GOGOGOG{% endif %}
+                    <a href="/copy-course/?name={{course.name}}">Copy</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h1>Courses are not created yet</h1>
+    {% endif %}
+    <a href="/create-course/?id={{category_id}}" class="like_a_button">Create a new course</a>
+{% endblock %}

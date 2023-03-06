@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block maincontent %}
+
+    {% if categories_list %}
+        <h1>Categories list</h1>
+        <ul>
+            {% for category in categories_list %}
+                <li>
+                    <p>{{category.name}}.</p>
+                    <span class="tips greenColor">
+                        {% if category.course_count() != 0 %}
+                            <a href="/courses-list/?id={{category.id}}">Available courses: {{category.course_count()}}</a>
+                        {% else %}
+                            <a href="/create-course/?id={{category.id}}">Create a new course</a>
+                        {% endif %}
+                    </span>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h1>Categories are not created yet</h1>
+    {% endif %}
+    <a href="/create-category/" class="like_a_button">Create a new category</a>
+{% endblock %}
